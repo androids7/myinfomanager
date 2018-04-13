@@ -1,0 +1,500 @@
+cn.edu.info_manage.domain.Blog -> cn.edu.info_manage.a.d:
+    int id -> a
+    java.lang.String summary -> b
+    java.lang.String world -> c
+    java.lang.String date -> d
+    java.lang.String audio -> e
+    java.lang.String video -> f
+    int user_id -> g
+    java.lang.String poto -> h
+    int getId() -> a
+    java.lang.String getWorld() -> b
+    java.lang.String getAudio() -> c
+    java.lang.String getVideo() -> d
+    int getUser_id() -> e
+    java.lang.String getPoto() -> f
+    java.lang.String getSummary() -> g
+    java.lang.String getDate() -> h
+cn.edu.info_manage.domain.Contacts -> cn.edu.info_manage.a.c:
+    int id -> a
+    int userid -> b
+    java.lang.String name -> c
+    java.lang.String sex -> d
+    java.lang.String tel -> e
+    java.lang.String email -> f
+    java.lang.String birthday -> g
+    java.lang.String nation -> h
+    java.lang.String bloodtype -> i
+    java.lang.String address -> j
+    java.lang.String nickname -> k
+    int getId() -> a
+    void setId(int) -> a
+    int getUserid() -> b
+    void setUserid(int) -> b
+    java.lang.String getName() -> c
+    java.lang.String getSex() -> d
+    java.lang.String getTel() -> e
+    java.lang.String getEmail() -> f
+    java.lang.String getBirthday() -> g
+    java.lang.String getNation() -> h
+    java.lang.String getBloodtype() -> i
+    java.lang.String getAddress() -> j
+    java.lang.String getNickname() -> k
+cn.edu.info_manage.domain.Memorandum -> cn.edu.info_manage.a.f:
+    int id -> a
+    int category -> b
+    java.lang.String summary -> c
+    java.lang.String description -> d
+    java.lang.String date -> e
+    int userid -> f
+    int getId() -> a
+    int getCategory() -> b
+    void setCategory(int) -> a
+    java.lang.String getSummary() -> c
+    void setSummary(java.lang.String) -> a
+    java.lang.String getDescription() -> d
+    void setDescription(java.lang.String) -> b
+    java.lang.String getDate() -> e
+    void setDate(java.lang.String) -> c
+    int getUserid() -> f
+cn.edu.info_manage.domain.Orders -> cn.edu.info_manage.a.e:
+    int id -> a
+    java.lang.String date -> b
+    java.lang.String money -> c
+    java.lang.String in_out -> d
+    java.lang.String use -> e
+    java.lang.String remark -> f
+    int user_id -> g
+    int getId() -> a
+    void setId(int) -> a
+    java.lang.String getDate() -> b
+    java.lang.String getMoney() -> c
+    java.lang.String getIn_out() -> d
+    java.lang.String getUse() -> e
+    java.lang.String getRemark() -> f
+    int getUser_id() -> g
+    void setUser_id(int) -> b
+cn.edu.info_manage.domain.User -> cn.edu.info_manage.a.b:
+    java.io.File PHOTO_DIR -> a
+    int id -> b
+    java.lang.String username -> c
+    java.lang.String password -> d
+    java.lang.String email -> e
+    int age -> f
+    java.lang.String sex -> g
+    byte[] poto -> h
+    byte[] getPoto() -> a
+    void setPoto(byte[]) -> a
+    java.lang.String getEmail() -> b
+    void setEmail(java.lang.String) -> a
+    int getId() -> c
+    java.lang.String getUsername() -> d
+    void setUsername(java.lang.String) -> b
+    java.lang.String getPassword() -> e
+    void setPassword(java.lang.String) -> c
+    int getAge() -> f
+    void setAge(int) -> a
+    java.lang.String getSex() -> g
+    void setSex(java.lang.String) -> d
+    java.lang.String toString() -> toString
+cn.edu.info_manage.domain.WorkPlan -> cn.edu.info_manage.a.a:
+    int id -> a
+    java.lang.String summary -> b
+    java.lang.String remark -> c
+    java.lang.String time -> d
+    java.lang.String date -> e
+    int user_id -> f
+    int getId() -> a
+    void setId(int) -> a
+    java.lang.String getSummary() -> b
+    java.lang.String getRemark() -> c
+    java.lang.String getTime() -> d
+    java.lang.String getDate() -> e
+    int getUser_id() -> f
+    void setUser_id(int) -> b
+cn.edu.info_manage.ui.BlogActivity -> cn.edu.info_manage.ui.BlogActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    android.widget.ListView listView -> b
+    java.util.List infos -> c
+    cn.edu.info_manage.util.BlogService bService -> d
+    java.io.File mCurrentPhotoFile -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void btText(android.view.View) -> btText
+    void btImage(android.view.View) -> btImage
+    void btVideo(android.view.View) -> btVideo
+    void btAudio(android.view.View) -> btAudio
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    cn.edu.info_manage.util.BlogService access$0(cn.edu.info_manage.ui.BlogActivity) -> a
+    cn.edu.info_manage.domain.User access$1(cn.edu.info_manage.ui.BlogActivity) -> b
+cn.edu.info_manage.ui.BlogActivity$1 -> cn.edu.info_manage.ui.l:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    android.widget.EditText val$content -> b
+    android.widget.EditText val$summary -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$2 -> cn.edu.info_manage.ui.m:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    android.widget.EditText val$content -> c
+    android.widget.EditText val$summary -> d
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$3 -> cn.edu.info_manage.ui.n:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$4 -> cn.edu.info_manage.ui.o:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$5 -> cn.edu.info_manage.ui.p:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$6 -> cn.edu.info_manage.ui.q:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$7 -> cn.edu.info_manage.ui.r:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$8 -> cn.edu.info_manage.ui.t:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogActivity$9 -> cn.edu.info_manage.ui.u:
+    cn.edu.info_manage.ui.BlogActivity this$0 -> a
+    cn.edu.info_manage.domain.Blog val$blog -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.BlogAdapter -> cn.edu.info_manage.ui.h:
+    android.content.Context mContext -> a
+    java.util.List infos -> b
+    android.view.LayoutInflater inflater -> c
+    java.text.DateFormat timeFormat -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.edu.info_manage.ui.BusinessManager -> cn.edu.info_manage.ui.BusinessManager:
+    cn.edu.info_manage.domain.User user_info -> a
+    cn.edu.info_manage.util.UserService userService -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_Memorandum(android.view.View) -> bt_Memorandum
+    void bt_InfoManager(android.view.View) -> bt_InfoManager
+    void bt_Contacts(android.view.View) -> bt_Contacts
+    void bt_Orders(android.view.View) -> bt_Orders
+    void bt_Blog(android.view.View) -> bt_Blog
+    void bt_Workplan(android.view.View) -> bt_Workplan
+    void onDestroy() -> onDestroy
+cn.edu.info_manage.ui.ContactsActivity -> cn.edu.info_manage.ui.ContactsActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    cn.edu.info_manage.util.ContactsService cService -> b
+    android.widget.ListView listView -> c
+    java.util.List infos -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void btAdd(android.view.View) -> btAdd
+    void onDestroy() -> onDestroy
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.edu.info_manage.ui.ContactsAdapter -> cn.edu.info_manage.ui.f:
+    android.content.Context mContext -> a
+    java.util.List infos -> b
+    android.view.LayoutInflater inflater -> c
+    java.text.DateFormat timeFormat -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.edu.info_manage.ui.InfoManageActivity -> cn.edu.info_manage.ui.InfoManageActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    cn.edu.info_manage.util.UserService userService -> b
+    android.view.View v_chageview -> c
+    android.app.Dialog dialog -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void changePass(android.view.View) -> changePass
+    void changePassword(android.view.View) -> changePassword
+    void delUser(android.view.View) -> delUser
+    void onDestroy() -> onDestroy
+    cn.edu.info_manage.util.UserService access$0(cn.edu.info_manage.ui.InfoManageActivity) -> a
+    cn.edu.info_manage.domain.User access$1(cn.edu.info_manage.ui.InfoManageActivity) -> b
+cn.edu.info_manage.ui.InfoManageActivity$1 -> cn.edu.info_manage.ui.e:
+    cn.edu.info_manage.ui.InfoManageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.InfoManageActivity$2 -> cn.edu.info_manage.ui.g:
+    cn.edu.info_manage.ui.InfoManageActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.LoginActivity -> cn.edu.info_manage.ui.LoginActivity:
+    android.widget.EditText username -> a
+    android.widget.EditText password -> b
+    cn.edu.info_manage.util.UserService uService -> c
+    android.content.SharedPreferences spf -> d
+    android.widget.CheckBox cb_savepass -> e
+    android.view.View v_findpass -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_Login(android.view.View) -> bt_Login
+    void bt_Register(android.view.View) -> bt_Register
+    void cb_SavePassword(android.view.View) -> cb_SavePassword
+    void bt_findPassword(android.view.View) -> bt_findPassword
+    void findPassword(android.view.View) -> findPassword
+    void onDestroy() -> onDestroy
+cn.edu.info_manage.ui.MemorandumActivity -> cn.edu.info_manage.ui.MemorandumActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    cn.edu.info_manage.util.MemorandumService mService -> b
+    android.widget.ListView listView -> c
+    java.util.List infos -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void btAdd(android.view.View) -> btAdd
+    void onDestroy() -> onDestroy
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.edu.info_manage.ui.MenorandumAdapter -> cn.edu.info_manage.ui.z:
+    android.content.Context mContext -> a
+    java.util.List infos -> b
+    android.view.LayoutInflater inflater -> c
+    java.text.DateFormat timeFormat -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.edu.info_manage.ui.OrderActivity -> cn.edu.info_manage.ui.OrderActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    android.widget.ListView listView -> b
+    java.util.List infos -> c
+    cn.edu.info_manage.util.OrdersService oService -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void btAdd(android.view.View) -> btAdd
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onDestroy() -> onDestroy
+cn.edu.info_manage.ui.OrdersAdapter -> cn.edu.info_manage.ui.v:
+    android.content.Context mContext -> a
+    java.util.List infos -> b
+    android.view.LayoutInflater inflater -> c
+    java.text.DateFormat timeFormat -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.edu.info_manage.ui.RegisterActivity -> cn.edu.info_manage.ui.RegisterActivity:
+    java.lang.String TAG -> a
+    java.io.File mCurrentPhotoFile -> b
+    android.widget.EditText mEtUsername -> c
+    android.widget.EditText mEt_Password -> d
+    android.widget.EditText mEt_Password2 -> e
+    android.widget.EditText mEt_Email -> f
+    android.widget.EditText mEt_Age -> g
+    android.widget.ImageView mIv_Poto -> h
+    android.widget.RadioGroup mRg_Sex -> i
+    android.widget.Button mBt_register -> j
+    java.lang.String mPotoDir -> k
+    cn.edu.info_manage.util.UserService uService -> l
+    android.graphics.Bitmap photoBitmap -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_Register(android.view.View) -> bt_Register
+    void bt_SetPoto(android.view.View) -> bt_SetPoto
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onDestroy() -> onDestroy
+    byte[] getImageData(android.graphics.Bitmap) -> a
+    void access$0(cn.edu.info_manage.ui.RegisterActivity) -> a
+    void access$1(cn.edu.info_manage.ui.RegisterActivity) -> b
+cn.edu.info_manage.ui.RegisterActivity$1 -> cn.edu.info_manage.ui.s:
+    cn.edu.info_manage.ui.RegisterActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowContactsActivity -> cn.edu.info_manage.ui.ShowContactsActivity:
+    android.widget.EditText et_name -> a
+    android.widget.EditText et_tel -> b
+    android.widget.EditText et_address -> c
+    android.widget.EditText et_email -> d
+    android.widget.EditText et_birthday -> e
+    android.widget.EditText et_nation -> f
+    android.widget.EditText et_bloodtype -> g
+    android.widget.EditText et_nickname -> h
+    android.widget.RadioGroup et_sex -> i
+    android.widget.Button bt_save_update -> j
+    android.widget.Button bt_contacts_del -> k
+    cn.edu.info_manage.util.ContactsService cService -> l
+    java.lang.Boolean isUpdate -> m
+    int id -> n
+    int userid -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_SaveUpdate(android.view.View) -> bt_SaveUpdate
+    void bt_Del(android.view.View) -> bt_Del
+    void onDestroy() -> onDestroy
+    cn.edu.info_manage.util.ContactsService access$0(cn.edu.info_manage.ui.ShowContactsActivity) -> a
+    int access$1(cn.edu.info_manage.ui.ShowContactsActivity) -> b
+cn.edu.info_manage.ui.ShowContactsActivity$1 -> cn.edu.info_manage.ui.b:
+    cn.edu.info_manage.ui.ShowContactsActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowContactsActivity$2 -> cn.edu.info_manage.ui.a:
+    cn.edu.info_manage.ui.ShowContactsActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowMemorandumActivity -> cn.edu.info_manage.ui.ShowMemorandumActivity:
+    cn.edu.info_manage.domain.User user_info -> c
+    int userid -> d
+    int id -> e
+    java.lang.Boolean isUpdate -> f
+    cn.edu.info_manage.util.MemorandumService mService -> g
+    cn.edu.info_manage.domain.Memorandum upInfo -> a
+    java.lang.String oldDate -> h
+    android.widget.TextView tv_date -> b
+    android.widget.TextView tv_time -> i
+    android.widget.Spinner s_category -> j
+    android.widget.EditText ev_summary -> k
+    android.widget.EditText ev_desvription -> l
+    android.app.Dialog dialog -> m
+    java.text.DateFormat timeFormat -> n
+    java.util.Calendar dateAndTime -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_Add_OK(android.view.View) -> bt_Add_OK
+    void bt_Mem_Del(android.view.View) -> bt_Mem_Del
+    void selectDate(android.view.View) -> selectDate
+    void selectTime(android.view.View) -> selectTime
+    void onDestroy() -> onDestroy
+    cn.edu.info_manage.util.MemorandumService access$0(cn.edu.info_manage.ui.ShowMemorandumActivity) -> a
+    int access$1(cn.edu.info_manage.ui.ShowMemorandumActivity) -> b
+    java.util.Calendar access$2(cn.edu.info_manage.ui.ShowMemorandumActivity) -> c
+    java.text.DateFormat access$3(cn.edu.info_manage.ui.ShowMemorandumActivity) -> d
+cn.edu.info_manage.ui.ShowMemorandumActivity$1 -> cn.edu.info_manage.ui.y:
+    cn.edu.info_manage.ui.ShowMemorandumActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowMemorandumActivity$2 -> cn.edu.info_manage.ui.w:
+    cn.edu.info_manage.ui.ShowMemorandumActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowMemorandumActivity$3 -> cn.edu.info_manage.ui.x:
+    cn.edu.info_manage.ui.ShowMemorandumActivity this$0 -> a
+    void onDateSet(android.widget.DatePicker,int,int,int) -> onDateSet
+cn.edu.info_manage.ui.ShowMemorandumActivity$4 -> cn.edu.info_manage.ui.aa:
+    cn.edu.info_manage.ui.ShowMemorandumActivity this$0 -> a
+    void onTimeSet(android.widget.TimePicker,int,int) -> onTimeSet
+cn.edu.info_manage.ui.ShowOrdersActivity -> cn.edu.info_manage.ui.ShowOrdersActivity:
+    android.widget.EditText et_use -> a
+    android.widget.EditText et_remark -> b
+    android.widget.EditText et_date -> c
+    android.widget.EditText et_money -> d
+    android.widget.RadioGroup et_in_out -> e
+    android.widget.Button bt_save_update -> f
+    android.widget.Button bt_orders_del -> g
+    cn.edu.info_manage.util.OrdersService oService -> h
+    java.lang.Boolean isUpdate -> i
+    int id -> j
+    int userid -> k
+    java.text.DateFormat timeFormat -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_SaveUpdate(android.view.View) -> bt_SaveUpdate
+    void bt_Del(android.view.View) -> bt_Del
+    void onDestroy() -> onDestroy
+    cn.edu.info_manage.util.OrdersService access$0(cn.edu.info_manage.ui.ShowOrdersActivity) -> a
+    int access$1(cn.edu.info_manage.ui.ShowOrdersActivity) -> b
+cn.edu.info_manage.ui.ShowOrdersActivity$1 -> cn.edu.info_manage.ui.j:
+    cn.edu.info_manage.ui.ShowOrdersActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowOrdersActivity$2 -> cn.edu.info_manage.ui.k:
+    cn.edu.info_manage.ui.ShowOrdersActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowWorkplanActivity -> cn.edu.info_manage.ui.ShowWorkplanActivity:
+    android.widget.EditText et_use -> a
+    android.widget.EditText et_remark -> b
+    android.widget.EditText et_date -> c
+    android.widget.EditText et_money -> d
+    android.widget.Button bt_save_update -> e
+    android.widget.Button bt_work_del -> f
+    cn.edu.info_manage.util.WorkplanService wService -> g
+    java.lang.Boolean isUpdate -> h
+    int id -> i
+    int userid -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void bt_SaveUpdate(android.view.View) -> bt_SaveUpdate
+    void bt_Del(android.view.View) -> bt_Del
+    void onDestroy() -> onDestroy
+    cn.edu.info_manage.util.WorkplanService access$0(cn.edu.info_manage.ui.ShowWorkplanActivity) -> a
+    int access$1(cn.edu.info_manage.ui.ShowWorkplanActivity) -> b
+cn.edu.info_manage.ui.ShowWorkplanActivity$1 -> cn.edu.info_manage.ui.d:
+    cn.edu.info_manage.ui.ShowWorkplanActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.ShowWorkplanActivity$2 -> cn.edu.info_manage.ui.c:
+    cn.edu.info_manage.ui.ShowWorkplanActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.edu.info_manage.ui.WorkplanActivity -> cn.edu.info_manage.ui.WorkplanActivity:
+    cn.edu.info_manage.domain.User user_info -> a
+    android.widget.ListView listView -> b
+    java.util.List infos -> c
+    cn.edu.info_manage.util.WorkplanService wService -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void btAdd(android.view.View) -> btAdd
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onDestroy() -> onDestroy
+cn.edu.info_manage.ui.WorkplanAdapter -> cn.edu.info_manage.ui.i:
+    android.content.Context mContext -> a
+    java.util.List infos -> b
+    android.view.LayoutInflater inflater -> c
+    java.text.DateFormat timeFormat -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.edu.info_manage.util.AlamrReceiver -> cn.edu.info_manage.util.AlamrReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.edu.info_manage.util.AlamrReceiver$1 -> cn.edu.info_manage.util.a:
+    cn.edu.info_manage.util.AlamrReceiver this$0 -> a
+    int val$id -> b
+    android.content.Context val$context -> c
+    int val$user_id -> d
+    java.lang.String val$summary -> e
+    java.lang.String val$remark -> f
+    int val$rcode -> g
+    void run() -> run
+cn.edu.info_manage.util.BlogService -> cn.edu.info_manage.util.c:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    java.lang.Boolean insertBlog(cn.edu.info_manage.domain.Blog) -> a
+    java.lang.Boolean delBlog(int) -> a
+    java.lang.Boolean delBlogByUserID(int) -> b
+    void updateBlog(cn.edu.info_manage.domain.Blog) -> b
+    java.util.List getAllBlog(int) -> c
+    void closeDB() -> a
+cn.edu.info_manage.util.ContactsService -> cn.edu.info_manage.util.d:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    java.lang.Boolean insertContacts(cn.edu.info_manage.domain.Contacts) -> a
+    java.lang.Boolean delContacts(int) -> a
+    java.lang.Boolean delContactsByUserID(int) -> b
+    void updateContacts(cn.edu.info_manage.domain.Contacts) -> b
+    java.util.List getAllContacts(int) -> c
+    cn.edu.info_manage.domain.Contacts getContactsByID(int) -> d
+    void closeDB() -> a
+cn.edu.info_manage.util.DatabaseHelper -> cn.edu.info_manage.util.f:
+    java.lang.String name -> a
+    int dbVersion -> b
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+cn.edu.info_manage.util.MemorandumService -> cn.edu.info_manage.util.e:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    java.lang.Boolean insertMemorandum(cn.edu.info_manage.domain.Memorandum) -> a
+    java.util.List slectAllInfo(int) -> a
+    cn.edu.info_manage.domain.Memorandum selectInfoByID(int) -> b
+    boolean deleteMemorandum(int) -> c
+    boolean updateMemorandum(cn.edu.info_manage.domain.Memorandum) -> b
+    java.lang.Boolean delInfoByUserID(java.lang.String) -> a
+    void closeDB() -> a
+cn.edu.info_manage.util.OrdersService -> cn.edu.info_manage.util.h:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    java.lang.Boolean insertOrders(cn.edu.info_manage.domain.Orders) -> a
+    java.lang.Boolean delOrders(int) -> a
+    java.lang.Boolean delOrdersByUserID(int) -> b
+    void updateOrders(cn.edu.info_manage.domain.Orders) -> b
+    java.util.List getAllOrders(int) -> c
+    cn.edu.info_manage.domain.Orders getOrdersByID(int) -> d
+    void closeDB() -> a
+cn.edu.info_manage.util.UserService -> cn.edu.info_manage.util.b:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    cn.edu.info_manage.domain.User getUserInfoByID(int) -> a
+cn.edu.info_manage.util.WorkplanService -> cn.edu.info_manage.util.g:
+    cn.edu.info_manage.util.DatabaseHelper dbHelper -> a
+    java.lang.Boolean insertWorkPlan(cn.edu.info_manage.domain.WorkPlan) -> a
+    java.lang.Boolean delWorkPlan(int) -> a
+    java.lang.Boolean delWorkPlanByUserID(int) -> b
+    void updateWorkPlan(cn.edu.info_manage.domain.WorkPlan) -> b
+    java.util.List getAllWorkPlan(int) -> c
+    cn.edu.info_manage.domain.WorkPlan getWorkPlanByID(int) -> d
+    void closeDB() -> a

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	/*	@author：
+	 *	登录界面
+	 */
+ -->
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+		android:layout_marginTop="20dip"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+	    >
+		<!-- 
+			请输入帐号密码
+		 -->
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:text="个人事务管理"
+	        android:textSize="30sp"
+	        android:textStyle="bold" />
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1" >
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="用户名：" />
+	            <EditText
+	                android:id="@+id/username"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:hint="用户名" />
+	                
+	            <Button android:id="@+id/register"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:text="注册"
+					android:onClick="bt_Register" />  
+	                
+	                
+	                
+	                
+	                
+	                
+	        </TableRow>
+	        <TableRow >
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="密码：" />
+	            <EditText
+	                android:id="@+id/password"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+					android:password="true"
+	                android:hint="密码" />
+	            <Button 
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="找回密码"
+	            	android:onClick="bt_findPassword"/>
+	        </TableRow>
+	    </TableLayout>
+	    <!-- 
+	    	登录注册按钮
+	     -->
+	    <LinearLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="center_horizontal"
+	    	>
+	    	<LinearLayout 
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	android:gravity="center"
+		    	>
+		    	<CheckBox 
+		    		android:id="@+id/cb_savepass"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:onClick="cb_SavePassword"/>
+		    	<TextView 
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:text="记住密码"/>
+	   		</LinearLayout>
+	        <Button
+	            android:id="@+id/login"
+	            android:layout_width="100dp"
+	            android:layout_height="wrap_content"
+	            android:text="登录" 
+	            android:onClick="bt_Login"
+	            android:layout_marginLeft="15dip"/>
+
+	    </LinearLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

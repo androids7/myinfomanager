@@ -1,0 +1,128 @@
+# view AndroidManifest.xml #generated:28
+-keep class cn.edu.info_manage.ui.BlogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class cn.edu.info_manage.ui.BusinessManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class cn.edu.info_manage.ui.ContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class cn.edu.info_manage.ui.InfoManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class cn.edu.info_manage.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class cn.edu.info_manage.ui.MemorandumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class cn.edu.info_manage.ui.OrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class cn.edu.info_manage.ui.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class cn.edu.info_manage.ui.ShowContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class cn.edu.info_manage.ui.ShowMemorandumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class cn.edu.info_manage.ui.ShowOrdersActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class cn.edu.info_manage.ui.ShowWorkplanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class cn.edu.info_manage.ui.WorkplanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class cn.edu.info_manage.util.AlamrReceiver { <init>(...); }
+
+# onClick res/layout/ac_contacts.xml #generated:20
+# onClick res/layout/ac_memorandum.xml #generated:20
+# onClick res/layout/ac_orders.xml #generated:20
+# onClick res/layout/ac_workplan.xml #generated:20
+-keepclassmembers class * { *** btAdd(...); }
+
+# onClick res/layout/ac_blog.xml #generated:36
+-keepclassmembers class * { *** btAudio(...); }
+
+# onClick res/layout/ac_blog.xml #generated:30
+-keepclassmembers class * { *** btImage(...); }
+
+# onClick res/layout/ac_blog.xml #generated:24
+-keepclassmembers class * { *** btText(...); }
+
+# onClick res/layout/ac_blog.xml #generated:42
+-keepclassmembers class * { *** btVideo(...); }
+
+# onClick res/layout/show_memorandum.xml #generated:71
+-keepclassmembers class * { *** bt_Add_OK(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:86
+-keepclassmembers class * { *** bt_Blog(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:65
+-keepclassmembers class * { *** bt_Contacts(...); }
+
+# onClick res/layout/show_contacts.xml #generated:153
+# onClick res/layout/show_orders.xml #generated:113
+# onClick res/layout/show_workplan.xml #generated:87
+-keepclassmembers class * { *** bt_Del(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:44
+-keepclassmembers class * { *** bt_InfoManager(...); }
+
+# onClick res/layout/ac_login.xml #generated:103
+-keepclassmembers class * { *** bt_Login(...); }
+
+# onClick res/layout/show_memorandum.xml #generated:81
+-keepclassmembers class * { *** bt_Mem_Del(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:51
+-keepclassmembers class * { *** bt_Memorandum(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:72
+-keepclassmembers class * { *** bt_Orders(...); }
+
+# onClick res/layout/ac_login.xml #generated:47
+# onClick res/layout/ac_register.xml #generated:151
+-keepclassmembers class * { *** bt_Register(...); }
+
+# onClick res/layout/show_contacts.xml #generated:146
+# onClick res/layout/show_orders.xml #generated:106
+# onClick res/layout/show_workplan.xml #generated:80
+-keepclassmembers class * { *** bt_SaveUpdate(...); }
+
+# onClick res/layout/ac_register.xml #generated:29
+-keepclassmembers class * { *** bt_SetPoto(...); }
+
+# onClick res/layout/ac_business_manager.xml #generated:93
+-keepclassmembers class * { *** bt_Workplan(...); }
+
+# onClick res/layout/ac_login.xml #generated:71
+-keepclassmembers class * { *** bt_findPassword(...); }
+
+# onClick res/layout/ac_login.xml #generated:93
+-keepclassmembers class * { *** cb_SavePassword(...); }
+
+# onClick res/layout/ac_info_manager.xml #generated:51
+-keepclassmembers class * { *** changePass(...); }
+
+# onClick res/layout/change_password.xml #generated:30
+-keepclassmembers class * { *** changePassword(...); }
+
+# onClick res/layout/ac_info_manager.xml #generated:56
+-keepclassmembers class * { *** delUser(...); }
+
+# onClick res/layout/findpassword.xml #generated:21
+-keepclassmembers class * { *** findPassword(...); }
+
+# onClick res/layout/show_memorandum.xml #generated:38
+-keepclassmembers class * { *** selectDate(...); }
+
+# onClick res/layout/show_memorandum.xml #generated:43
+-keepclassmembers class * { *** selectTime(...); }
+
